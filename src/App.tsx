@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Safhire Repo Created</h1>
+      <p>For saphir project</p>
     </div>
   );
 }
