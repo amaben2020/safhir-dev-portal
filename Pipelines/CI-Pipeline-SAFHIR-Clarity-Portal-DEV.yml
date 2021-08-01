@@ -81,7 +81,7 @@ stages:
               repository: $(acrrepo)
               Dockerfile: Dockerfile
               buildContext: .
-              tags: '$(SAFHIRPORTAL)-$(environment)-$(Build.BuildNumber)'
+              tags: '$(SAFHIRWEB)-$(environment)-$(Build.BuildNumber)'
 
 ######################## DEPLOY To AKS  ############################
   - stage: 'Deploy'
@@ -95,7 +95,7 @@ stages:
         vmImage: 'ubuntu-latest'
       variables:
       - name: image_tag
-        value: '$(SAFHIRPORTAL)-$(environment)-$(Build.BuildNumber)'  
+        value: '$(SAFHIRWEB)-$(environment)-$(Build.BuildNumber)'  
       - group: Clarity-Safhirportal-BuildandValidation-DEV
       strategy:
        runOnce:
@@ -127,6 +127,6 @@ stages:
                   command: 'upgrade'
                   chartType: 'FilePath'
                   chartPath: '$(System.DefaultWorkingDirectory)/helm'
-                  releaseName: '$(SAFHIRPORTAL)'
+                  releaseName: '$(SAFHIRWEB)'
                   overrideValues: 'image_tag=$(image_tag)'
                   arguments: '--timeout 1200s'
