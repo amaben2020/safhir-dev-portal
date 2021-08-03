@@ -1,7 +1,6 @@
 .landingPage__wrapper {
   padding: 10rem;
   display: flex;
-  position: relative;
 
   &-button-area {
     margin-top: 2rem;
@@ -10,13 +9,11 @@
       background: transparent;
       color: linear-gradient(90deg, #4a46ef 0%, #387fc1 48.96%, #36bccc 100%);
       border: 0.5px solid #4a46ef;
-
       border-radius: 10000px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-
       text-transform: uppercase;
       font-weight: 500;
       width: 135px;
@@ -145,7 +142,8 @@
 
 .overflow {
   overflow-y: scroll !important;
-  height: 90vh;
+  height: 93vh;
+
   &::-webkit-scrollbar {
     width: 0 !important;
     background: transparent !important; /* Optional: just make scrollbar invisible */
@@ -216,7 +214,6 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    // text-decoration: underline;
   }
 }
 
