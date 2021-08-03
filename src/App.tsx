@@ -1,13 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import NavigationBar from "./components/NavigatorBar";
+
+import "react-toastify/dist/ReactToastify.css";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Safhire Repo Created</h1>
-      <p>For saphir project</p>
-    </div>
+    <>
+      <NavigationBar />
+      <div>
+        <LandingPage />
+      </div>
+    </>
   );
 }
 

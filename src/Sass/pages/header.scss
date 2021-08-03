@@ -1,0 +1,83 @@
+.landingPage__wrapper {
+  padding: 10rem;
+  // overflow-y: scroll;
+  display: flex;
+  //   height: 70vh;
+
+  &-img {
+    width: 20%;
+    display: block;
+  }
+
+  &-h1 {
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #111111;
+  }
+
+  &-h2 {
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #111111;
+
+    &-span {
+      color: #4a46ef;
+      font-weight: 600;
+    }
+
+    &-h3 {
+      color: #616576;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &-header {
+  }
+
+  &-hero {
+    display: flex !important;
+    text-align: center;
+    justify-content: center;
+
+    &-img {
+      width: 85%;
+    }
+  }
+}
+
+.overflow {
+  overflow-y: scroll !important;
+  height: 90vh;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important; /* Optional: just make scrollbar invisible */
+  }
+}
+
+.landingPage__section2 {
+  padding: 10rem;
+  display: flex;
+
+  &-img {
+    width: 80%;
+  }
+
+  &-textArea {
+    padding: 2rem;
+  }
+}
