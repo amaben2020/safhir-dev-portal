@@ -1,6 +1,14 @@
 .landingPage__wrapper {
   padding: 10rem;
   display: flex;
+  transition: all 0.2s ease-in;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem !important;
+  }
 
   &-button-area {
     margin-top: 2rem;
@@ -19,6 +27,10 @@
       width: 135px;
       padding: 1rem;
       outline: none;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 1.2rem;
+      }
     }
 
     &-2 {
@@ -49,6 +61,10 @@
   &-img {
     width: 20%;
     display: block;
+
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
   }
 
   &-h1 {
@@ -60,6 +76,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: #111111;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 38px;
+    }
   }
 
   &-h2 {
@@ -71,6 +91,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: #111111;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 32px;
+    }
 
     &-span {
       color: #4a46ef;
@@ -79,7 +103,6 @@
 
     &-h3 {
       color: #616576;
-
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
@@ -89,6 +112,9 @@
   }
 
   &-header {
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &-hero {
@@ -106,6 +132,8 @@
   }
 
   &-section2-textArea {
+    @media screen and (max-width: 768px) {
+    }
     &-h1 {
       font-family: Montserrat;
       font-size: 32px;
@@ -154,6 +182,10 @@
   padding: 10rem;
   display: flex;
 
+  @media screen and (max-width: 546px) {
+    padding: 3.8rem !important;
+  }
+
   &-img {
     width: 80%;
   }
@@ -177,7 +209,6 @@
 .footer-section {
   display: flex;
   align-items: center;
-  //   justify-content: space-around;
 
   &-logo {
     width: 80%;
@@ -219,4 +250,11 @@
 
 .space {
   margin-right: 5rem;
+}
+
+.landingPage__wrapper-section2-img {
+  @media screen and (max-width: 540px) {
+    width: 20%;
+    margin-bottom: 1rem;
+  }
 }

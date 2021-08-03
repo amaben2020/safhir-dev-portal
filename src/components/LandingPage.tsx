@@ -54,7 +54,7 @@ const LandingPage = () => {
         </div>
 
         <Row className="landingPage__section2">
-          <Col lg={5}>
+          <Col lg={5} sm={12} xs={12}>
             <div>
               <img
                 className="landingPage__wrapper-section2-img"
@@ -63,7 +63,7 @@ const LandingPage = () => {
               />{" "}
             </div>
           </Col>
-          <Col lg={7}>
+          <Col lg={7} sm={12} xs={12}>
             <div className="landingPage__wrapper-section2-textArea">
               <h1 className="landingPage__wrapper-section2-textArea-h1">
                 About Safhir
