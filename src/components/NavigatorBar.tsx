@@ -2,10 +2,6 @@ import React from "react";
 import { Navbar, Nav, Button, NavDropdown, Container } from "react-bootstrap";
 import logo from "../../src/images/safhir-logo-white.png";
 import "./../Sass/components/navbar.scss";
-// interface ChildProps {
-//   expand: string;
-//   id: string;
-// }
 
 const NavigationBar = () => {
   return (

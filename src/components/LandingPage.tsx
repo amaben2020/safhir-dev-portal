@@ -1,7 +1,8 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import safhir from "./../images/hero.svg";
 import safhirSmall from "./../images/safhir-2.png";
+import Footer from "./Footer";
+import logoWhite from "./../images/onyx.png";
 const LandingPage = () => {
   return (
     <Container fluid className="overflow">
@@ -26,6 +27,16 @@ const LandingPage = () => {
                 SAFHIR applications use OAuth2 to access SAFHIR Application
                 Progamming Interfaces (APIs).{" "}
               </h3>
+              <div className="landingPage__wrapper-button-area">
+                <button className="landingPage__wrapper-button-area-1">
+                  {" "}
+                  Login
+                </button>
+                <button className="landingPage__wrapper-button-area-2">
+                  {" "}
+                  Register{" "}
+                </button>
+              </div>
             </header>
           </Col>
 
@@ -56,7 +67,10 @@ const LandingPage = () => {
             <h1 className="landingPage__wrapper-section2-textArea-h1">
               About Safhir
             </h1>
-            <h2> SAFHIR Applications</h2>
+            <h2 className="landingPage__wrapper-section2-textArea-h2">
+              {" "}
+              SAFHIR Applications
+            </h2>
             <h3 className="landingPage__wrapper-section2-textArea-h3">
               {" "}
               SAFHIR applications typically function on bealf on insurance
@@ -95,6 +109,20 @@ const LandingPage = () => {
           </div>
         </Col>
       </Row>
+      <footer>
+        <div className="footer-wrapper">
+          <div className="footer-section">
+            <img src={logoWhite} alt="" className="footer-section-logo" />
+          </div>
+          <div className="footer-wrapper-1">
+            <p className="footer-section-text space">HL7 FHIR R4</p>
+            <p className="footer-section-text">Azure FHIR</p>
+          </div>
+          <div className="footer-wrapper-2">
+            <p className="footer-section-text">© 2020-2021 - Onyx Health</p>
+          </div>
+        </div>
+      </footer>
     </Container>
   );
 };
