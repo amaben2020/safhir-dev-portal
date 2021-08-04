@@ -1,22 +1,15 @@
+@use  './../base/button.scss';
+
+
 .navbar,
 .navbar-default {
-  background-image: linear-gradient(
-    90deg,
-    #4a46ef 0%,
-    #387fc1 48.96%,
-    #36bccc 100%
-  ) !important;
+  background-image: var( --color-primary-nav) !important;
   //   height: 9.6vh;
   padding: 2vh;
   align-items: center;
 
   &:hover {
-    background-image: linear-gradient(
-      90deg,
-      #36bccc 0%,
-      #387fc1 48.96%,
-      #4a46ef 100%
-    ) !important;
+    background-image: var(--color-primary-nav-inverted) !important;
   }
 }
 
@@ -34,7 +27,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #fff !important;
+  color: var( --color-primary-white) !important;
   text-transform: uppercase;
   font-weight: 500;
 
@@ -45,7 +38,7 @@
 }
 
 .nav-link {
-  color: #fff !important;
+  color: var( --color-primary-white) !important;
 }
 
 a.nav-link {
@@ -58,25 +51,25 @@ a.nav-link {
 
 .btn-primary {
   background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var( --color-primary-white) !important;
+  border: 1px solid var( --color-primary-white);
   border-radius: 10000px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  color: #fff !important;
   text-transform: uppercase;
   font-weight: 500;
   width: 135px;
   padding: 8px, 32px, 8px, 32px;
+ 
 }
 
 .btn-register {
   width: 135px;
   border-radius: 10000px;
   padding: 8px, 32px, 8px, 32px;
-  background: #fff !important;
+  background:var( --color-primary-white) !important;
   color: #000 !important;
   font-family: "Montserrat";
   font-size: 14px;
@@ -85,6 +78,8 @@ a.nav-link {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
+
+  
 }
 
 .navbar-toggler-icon {

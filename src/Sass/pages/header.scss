@@ -1,3 +1,20 @@
+@use './../base/typography.scss';
+@use  './../base/button.scss';
+
+
+
+.overflow {
+  overflow-y: scroll !important;
+  height: 93vh;
+  
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important; 
+  }
+}
+
+
 .landingPage__wrapper {
   padding: 10rem;
   display: flex;
@@ -14,47 +31,11 @@
     margin-top: 2rem;
 
     &-1 {
-      background: transparent;
-      color: linear-gradient(90deg, #4a46ef 0%, #387fc1 48.96%, #36bccc 100%);
-      border: 0.5px solid #4a46ef;
-      border-radius: 10000px;
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: 500;
-      width: 135px;
-      padding: 1rem;
-      outline: none;
-
-      @media screen and (max-width: 768px) {
-        margin-bottom: 1.2rem;
-      }
+     @extend .button-login;
     }
 
     &-2 {
-      width: 135px;
-      border-radius: 10000px;
-      padding: 1rem;
-      background: #fff !important;
-      color: #fff !important;
-      font-family: "Montserrat";
-      text-transform: uppercase;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0em;
-      text-align: center;
-      margin-left: 1rem;
-      background: linear-gradient(
-        90deg,
-        #4a46ef 0%,
-        #387fc1 48.96%,
-        #36bccc 100%
-      ) !important;
-      border: none;
+     @extend .button-register;
     }
   }
 
@@ -68,46 +49,20 @@
   }
 
   &-h1 {
-    font-family: "Montserrat";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #111111;
-    @media screen and (max-width: 768px) {
-      text-align: center;
-      font-size: 38px;
-    }
+  
+     @extend .h1
+    
   }
 
   &-h2 {
-    font-family: "Montserrat";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #111111;
-    @media screen and (max-width: 768px) {
-      text-align: center;
-      font-size: 32px;
-    }
-
+   @extend .h2;
     &-span {
       color: #4a46ef;
       font-weight: 600;
     }
 
     &-h3 {
-      color: #616576;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 36px;
+  @extend .h3;
     }
   }
 
@@ -135,46 +90,15 @@
     @media screen and (max-width: 768px) {
     }
     &-h1 {
-      font-family: Montserrat;
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 39px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #4c5065;
-      margin-bottom: 2rem;
+      @extend .h1-secondary;
     }
     &-h2 {
-      font-family: Montserrat;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 40px;
-      letter-spacing: 0em;
-      text-align: left;
-      color: #111111;
+       @extend .h2-secondary;
     }
 
     &-h3 {
-      font-family: Questrial;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 27px;
-      letter-spacing: 0em;
-      text-align: left;
+     @extend .h3-secondary;
     }
-  }
-}
-
-.overflow {
-  overflow-y: scroll !important;
-  height: 93vh;
-
-  &::-webkit-scrollbar {
-    width: 0 !important;
-    background: transparent !important; /* Optional: just make scrollbar invisible */
   }
 }
 
@@ -194,14 +118,7 @@
     padding: 2rem;
 
     &-h1 {
-      color: #111111;
-      font-family: "Montserrat";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 40px;
-      letter-spacing: 0em;
-      text-align: left;
+      @extend .h1-small;
     }
   }
 }
@@ -216,7 +133,7 @@
   }
 
   &-text {
-    color: #fff;
+    color: var( --color-primary-white);
   }
 }
 
@@ -224,27 +141,10 @@
   display: flex;
 
   &-1 {
-    display: flex;
-    margin-left: auto;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: underline;
+   @extend .footer-font;
   }
   &-2 {
-    display: flex;
-    margin-left: auto;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+      @extend .footer-font;
   }
 }
 

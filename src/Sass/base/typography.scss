@@ -1,37 +1,99 @@
-// body {
-//   font-family: "Questrial", "Montserrat";
-//   box-sizing: border-box;
-//   font-style: normal;
+body {
+  font-family: "Questrial", "Montserrat";
+  box-sizing: border-box;
+  font-style: normal;
+}
 
-// }
+ .h1{
+    font-family: "Montserrat";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #111111;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      font-size: 38px;
+    }
+}
 
-// .heading-primary {
+.h1-secondary{
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #4c5065;
+      margin-bottom: 2rem;
+}
+.h1-small{
+  color: #111111;
+      font-family: "Montserrat";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: left;
+}
+.h2{
+font-family: "Montserrat";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 64px;
+letter-spacing: 0em;
+text-align: left;
+color: #111111;
+@media screen and (max-width: 768px) {
+  text-align: center;
+  font-size: 32px;
+}
+ }
 
-// //   &--main {
-// //     display: block;
-// //     font-size: 6rem;
-// //     font-weight: 400;
-// //     letter-spacing: 3.5rem;
+ .h2-secondary{
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #111111;
+ }
 
-// //     animation-name: moveInLeft;
-// //     animation-duration: 1s;
-// //     animation-timing-function: ease-out;
+ .h3{
+    color: #616576;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+ }
 
-//     // @include respond(phone) {
-//     //   letter-spacing: 1rem;
-//     //   font-family: 5rem;
-//     // }
-//   }
+ .h3-secondary{
+  font-family: Questrial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+ }
 
-//   &--sub {
-//     display: block;
-//     font-size: 2rem;
-//     font-weight: 700;
-//     letter-spacing: 1.75rem;
-//     // animation: moveInRight 1s ease-out;
-
-//     // @include respond(phone) {
-//     //   letter-spacing: 0.5rem;
-//     // }
-//   }
-// }
+ .footer-font{
+  display: flex;
+  margin-left: auto;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+ }
