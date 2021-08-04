@@ -1,0 +1,80 @@
+@use './../../Sass/base/typography.scss';
+
+.sidebar{
+height: 100vh;
+max-width: 25vw;
+background: #FFFFFF;
+box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: column;
+
+
+&:hover{
+    box-shadow: 5px 0px 13px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+}
+
+
+&-h2{
+    @extend .h2-small;
+    margin-top: 1rem;
+}
+
+&__wrapper{
+ 
+ padding: 1.5rem;
+
+    &-ul{
+        list-style: none;
+        justify-content: space-between;
+        transition: all .2s ease-in; 
+        padding: 0 !important
+       
+    }
+
+    &-li{
+        @extend .h3-links;
+         margin: 2rem 1rem 2rem 0;
+        position: relative;
+       
+
+        &:hover{
+            color: #484BEB;
+           font-weight: 800;
+            cursor: pointer;
+            border-bottom: 1px solid #E3E3EC;
+            width: 100%;
+
+            &::after{
+                background: #484BEB;
+                height: 80%;
+                width: 3px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: '';
+                border-radius: 10px;                
+            }
+
+            &::selection{
+                background: #484BEB;
+                height: 80%;
+                width: 3px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: '';
+                border-radius: 10px; 
+            }
+        }
+        
+    }
+
+    &-img{
+        margin-right: 0.5rem;
+        color: blue;
+            cursor: pointer;
+    }
+}
+}
+

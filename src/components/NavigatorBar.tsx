@@ -48,7 +48,7 @@ const NavigationBar = () => {
                   <img className='auth-flex-img-bell'  src={bellIcon} alt="bell" />
                   <div  className='auth-flex-textArea'>
                   <h5>MarvFash</h5>
-                  <h5>8958u5984u48540893838838</h5>
+                  <h5>8958u59848838</h5>
                   </div>
                   <img src={womanIcon} alt="gear" />
                 </Nav.Link>
