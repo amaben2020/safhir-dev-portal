@@ -1,0 +1,52 @@
+@use './../../Sass/base/typography.scss';
+@use './../../Sass/base/button.scss';
+ 
+
+.modal-content{
+    // width: 120% !important;
+    width: 70vw;
+    margin-left: -15vw;
+    position: relative;
+    height: 90vh;
+    border-radius: 15px !important;
+}
+
+.modal-body{
+    @extend .h3-secondary;
+    padding: 3rem;
+    line-height: 2;
+   
+}
+
+.modal-title{
+    @extend .h1-secondary;
+    font-size: 2.2rem;
+}
+
+.modal-header .btn-close{
+    height: 4rem !important;
+    width: 2rem !important;
+}
+ 
+.terms-of-use{
+    display: block;
+    font-size: 2rem;
+    padding-left: 2rem;
+     
+}
+
+.agree{
+    @extend .button-register;
+  width: 15vw !important;
+}
+.cancel{
+    @extend .button-login;
+    color: black !important;
+}
+
+.modal-footer{
+    position: absolute !important;
+    bottom: 0;
+    background: #fff !important;
+    width: 100%;
+}
