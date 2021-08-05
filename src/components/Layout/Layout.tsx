@@ -3,6 +3,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import { useLocation } from 'react-router-dom';
 import './layout.scss' 
 import DevPortalHome from './../../Pages/DevportalHome'
+import ApprovedSoftware from '../../Pages/ApprovedSoftware/ApprovedSoftware';
 
 interface Props {
 	children: React.ReactNode;
@@ -35,14 +36,15 @@ const Dashboard: React.FC<ChildProps> = (props) => {
 		if (locator === '/dev-home') {
 			component.push(<DevPortalHome/>);
 		}
+		else if (locator === '/approved-software') {
+			component.push(<ApprovedSoftware/>);
+		}
 		return component;
 	};
 
 	return (
 		<>
-			<Layout 
-			 
-			>
+			<Layout>
 				{locationComponentFinder(locator)}{' '}
 			</Layout>
 		</>

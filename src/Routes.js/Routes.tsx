@@ -2,6 +2,7 @@ import React from "react";
 import { Spinner } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Sidebar from "../components/Sidebar/Sidebar";
+import ApprovedSoftware from "../Pages/ApprovedSoftware/ApprovedSoftware";
 import DevportalHome from "../Pages/DevportalHome";
 import Dashboard from "./../components/Layout/Layout";
 import Layout from './../components/Layout/Layout'
@@ -16,19 +17,19 @@ const Routes = () => {
       }
     >
       <Router>
-        <Switch>
+      
           <Route exact path="/">
             <LandingPage />
           </Route>
          
             <Dashboard>
-               <Route  exact path='/devportal-home' component={DevportalHome}/>
-             
-              
-              
+            <Switch>
+               <Route  exact={true} path='/devportal-home' component={DevportalHome}/>        
+               <Route  exact path='/approved-software' component={ApprovedSoftware}/>        
+               </Switch>         
             </Dashboard>
         
-        </Switch>
+       
       </Router>
     </React.Suspense>
   );

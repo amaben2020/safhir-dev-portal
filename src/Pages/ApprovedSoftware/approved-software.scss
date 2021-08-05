@@ -1,0 +1,121 @@
+@use  './../../Sass/base/typography.scss';
+@use  './../../Sass/base/button.scss';
+
+.dropdown-toggle{
+     width: 70vw;
+    border-radius: 20px;
+    margin-top: 2rem;
+    
+}
+
+.btn-success{
+    background:  #F2F5FE !important;
+    border: none !important;
+}
+
+.approved-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    
+    &-h2{
+        @extend .h2-secondary;
+        padding: 1rem;
+        font-size: 18px;
+    }
+    &-h3{
+         @extend .h2-secondary;
+         padding: 1rem;
+         font-size: 16px;
+        }
+
+    &-img{
+        display: flex;
+        justify-content: space-around;
+
+        &-svg{
+           padding: 2rem;
+        }
+    }
+}
+
+.dropdown-item{
+   width: 70vw;
+    border-radius: 20px;
+    transition: all 3s ease-in;
+   
+}
+
+.dropdown-menu{
+    border: none !important;
+}
+
+
+
+.home{
+    display: flex;
+    &-h3{
+         @extend .h3-secondary;
+        font-size: 16px !important;  
+        line-height: 1.8 !important;   
+    }
+    &-btn{
+        margin-left: auto;
+        @extend .button-register;
+        width: 15vw !important;
+        font-size: 12px;
+        height: 7vh !important;
+    }
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+
+    &-1{
+        &-p{
+            font-family: Questrial;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #616576;
+
+&-2{
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#111111;
+}
+        }
+    }
+    &-2{}
+    &-3{}
+}
+.button-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    &-btn{
+        height: 32px;
+width: 94px;
+border-radius: 10px;
+padding: 4px, 16px, 4px, 16px;
+background: #F2F5FE;
+margin: 0.5rem;
+border: none;
+color: #484BEB;
+
+    }
+}

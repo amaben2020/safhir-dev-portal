@@ -1,11 +1,16 @@
-import React from 'react'
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row, Dropdown, DropdownButton,  } from 'react-bootstrap';
 import './devportal-home.scss';
+import Dropdownn from './../components/Dropdown/Dropdown'
+import { useHistory, useLocation } from 'react-router';
 const DevportalHome = () => {
+    const history = useHistory()
+    const route = useLocation()
     return (
         <div className='home overflow'>
-            <Row> 
-                <Col lg={10} className='wrapper'> 
+       {route.pathname === '/devportal-home' &&  <Row> 
+                <Col lg={10} sm={12} xs={12} className='wrapper'> 
+                    {/* <Dropdownn/> */}
+
              <h2 className='home-h2'> Hello, Marvel,</h2>
 
             <h3 className='home-h3'> You are a Developer for SAFHIR Developers </h3>
@@ -36,13 +41,12 @@ const DevportalHome = () => {
                          help get your application discovered and trusted. 
                     Data providers often use this list to include your application in their online offerings.</p>
 
-             <button className='about-btn'> Create New Application</button>
-                
+             <button className='about-btn'> Create New Application</button>  
             </div> 
 
             </Col>
 
-         </Row>
+         </Row>}
         </div>
     )
 }
