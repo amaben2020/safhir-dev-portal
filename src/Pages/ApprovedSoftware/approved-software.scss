@@ -1,6 +1,17 @@
 @use  './../../Sass/base/typography.scss';
 @use  './../../Sass/base/button.scss';
 
+.overflow {
+    overflow-y: scroll !important;
+    height: 93vh;
+    
+  
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      background: transparent !important; 
+    }
+  }
+
 .dropdown-toggle{
      width: 70vw;
     border-radius: 20px;
@@ -11,6 +22,12 @@
 .btn-success{
     background:  #F2F5FE !important;
     border: none !important;
+
+    &:focus{
+        border: 1px solid #484BEB !important;
+        box-shadow: 2px #484BEB;
+    
+    }
 }
 
 .approved-dropdown{
@@ -67,7 +84,7 @@
     &-btn{
         margin-left: auto;
         @extend .button-register;
-        width: 15vw !important;
+        width: auto !important;
         font-size: 12px;
         height: 7vh !important;
     }
@@ -109,13 +126,23 @@ color: #616576;
 
     &-btn{
         height: 32px;
-width: 94px;
-border-radius: 10px;
-padding: 4px, 16px, 4px, 16px;
-background: #F2F5FE;
-margin: 0.5rem;
-border: none;
-color: #484BEB;
+        width: 94px;
+        border-radius: 10px;
+        padding: 4px, 16px, 4px, 16px;
+        background: #F2F5FE;
+        margin: 0.5rem;
+        border: none;
+        color: #484BEB;
 
+&-large{
+    color: #484BEB;
+    border: 1px solid #484BEB;
+    @extend .button-login;
+    font-size: 10px;
+    width: auto;
+
+
+
+}
     }
 }
