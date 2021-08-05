@@ -1,13 +1,17 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Sidebar from "../components/Sidebar/Sidebar";
-import ApprovedSoftware from "../Pages/ApprovedSoftware/ApprovedSoftware";
-import DevportalHome from "../Pages/DevportalHome";
-import PendingApproval from "../Pages/PendingApproval/PendingApproval";
-import Dashboard from "./../components/Layout/Layout";
-import Layout from "./../components/Layout/Layout";
+
 const LandingPage = React.lazy(() => import("./../components/LandingPage"));
+const ApprovedSoftware = React.lazy(
+  () => import("../Pages/ApprovedSoftware/ApprovedSoftware")
+);
+const DevportalHome = React.lazy(() => import("../Pages/DevportalHome"));
+const PendingApproval = React.lazy(
+  () => import("../Pages/PendingApproval/PendingApproval")
+);
+const Dashboard = React.lazy(() => import("./../components/Layout/Layout"));
+
 const Routes = () => {
   return (
     <React.Suspense

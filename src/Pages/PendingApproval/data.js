@@ -1,0 +1,20 @@
+export const data = {
+    "client_name": "Test",
+    "client_uri": "",
+    "software_id": "6a3007c3-63a3-4777-a03b-4c599a367d57",
+    "software_version": "1.0",
+    "application_type": "web",
+    "client_type": "CLIENT_CONFIDENTIAL",
+    "grant_types": "GRANT_AUTHORIZATION_CODE",
+    "redirect_uris": "https://lsknalkslas.com",
+    "scopes": "UscorePatientRead UscoreUserRead",
+    "logo_uri": "",
+    "tos_uri": "https://lsknalkslas.com",
+    "policy_uri": "https://lsknalkslas.com",
+    "certifications_uri": "",
+    "support_email": "alsmlkasml@email.com",
+    "support_phone_number": "",
+    "contacts": "snlasla",
+    "description": "",
+    "affiliate_path": ""
+}

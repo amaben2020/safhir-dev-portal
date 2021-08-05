@@ -37,13 +37,15 @@
 
 .agree{
     @extend .button-register;
-  width: 15vw !important;
+  width: auto !important;
 }
 .cancel{
     @extend .button-login;
-    color: black !important;
+   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  
 }
 
+ 
 .modal-footer{
     position: absolute !important;
     bottom: 0;

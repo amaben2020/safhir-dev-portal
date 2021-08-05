@@ -4,9 +4,9 @@
 .navbar,
 .navbar-default {
   background-image: var( --color-primary-nav) !important;
-  //   height: 9.6vh;
   padding: 2vh;
   align-items: center;
+  box-shadow: 5px 0px 13px rgba(61, 61, 61, 0.418);
 
   &:hover {
     background-image: var(--color-primary-nav-inverted) !important;

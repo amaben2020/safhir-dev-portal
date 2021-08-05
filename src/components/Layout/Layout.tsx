@@ -8,8 +8,6 @@ import PendingApproval from "../../Pages/PendingApproval/PendingApproval";
 
 interface Props {
   children: React.ReactNode;
-  // toggleShowSidebar: () => void;
-  // showSidebar: boolean;
 }
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
   return (
@@ -22,10 +20,7 @@ const Layout: React.FunctionComponent<Props> = (props: Props) => {
     </>
   );
 };
-interface ChildProps {
-  // toggleShowSidebar: () => void;
-  // showSidebar: boolean;
-}
+interface ChildProps {}
 
 const Dashboard: React.FC<ChildProps> = (props) => {
   const location = useLocation();
