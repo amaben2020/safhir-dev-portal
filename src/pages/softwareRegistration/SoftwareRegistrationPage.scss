@@ -1,0 +1,235 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        line-height: 39px;
+        color: #111111;
+        margin-top: 2rem;
+    }
+    .progress-steps-container {
+        width: 60vw;
+
+        .steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
+            width: 100%;
+
+            .step-in-progress {
+                display: flex;
+                justify-content: space-between;
+
+                .step-number {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 29px;
+                    border: 1px solid #484beb;
+                    color: #484beb;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .title {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #111111;
+                }
+                .status {
+                    font-family: Questrial;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #484beb;
+                }
+            }
+            .step-completed {
+                display: flex;
+                justify-content: space-between;
+                .step-number {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 29px;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid #484beb;
+                    color: #484beb;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    background-color: #484beb;
+                    align-items: center;
+                    text-align: center;
+                    color: #ffffff;
+                }
+                .title {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #616576;
+                }
+                .status {
+                    font-family: Questrial;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #484beb;
+                }
+            }
+            .next-step {
+                display: flex;
+                justify-content: space-between;
+                .step-number {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 29px;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid #c5c5c5;
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 50%;
+                    background-color: #c5c5c5;
+                    align-items: center;
+                    text-align: center;
+                    color: #ffffff;
+                }
+                .title {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #616576;
+                }
+                .status {
+                    font-family: Questrial;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #616576;
+                }
+            }
+        }
+    }
+}
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    .form-container {
+        width: 60vw;
+        padding: 4rem;
+        display: grid;
+        place-items: center;
+
+        label {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #111111;
+        }
+
+        textarea,
+        select,
+        input:not([type="checkbox"]) {
+            border: none;
+            font-family: Questrial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 27px;
+            background-color: #f2f5fe;
+            color: #797c8c;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .implementation-guide-payer {
+            width: 50%;
+        }
+        button {
+            width: 50%;
+            border: none;
+        }
+        .description {
+            font-family: Questrial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #616576;
+        }
+    }
+}
+
+/* Smartphones (portrait and landscape) --- */
+@media screen and (max-width: 480px) {
+    .card {
+        display: grid;
+        place-content: center;
+
+        .progress-steps-container {
+            width: 100vw;
+
+            .steps {
+                display: flex;
+                justify-content: center;
+
+                .step-in-progress,
+                .step-completed,
+                .next-step {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    place-items: center;
+                    padding: 0.5em;
+                    text-align: center;
+
+                    .step-number {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    .title {
+                        font-size: 10px;
+                        line-height: 15px;
+                    }
+                    .status {
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .form-container {
+        width: 80vw !important;
+    }
+}

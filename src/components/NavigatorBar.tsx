@@ -29,7 +29,7 @@ const NavigationBar = () => {
               </Nav.Link>
 
               <Nav>
-                <Nav.Link href="#deets">
+                <Nav.Link>
                   <Button> Login </Button>
                 </Nav.Link>
                 <Nav.Link eventKey={2} href="#memes">
