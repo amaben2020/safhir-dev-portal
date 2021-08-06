@@ -2,17 +2,17 @@ import React from "react";
 import { Navbar, Nav, Button, NavDropdown, Container } from "react-bootstrap";
 import logo from "../../src/images/safhir-logo-white.png";
 import "./../Sass/components/navbar.scss";
-// interface ChildProps {
-//   expand: string;
-//   id: string;
-// }
+import bellIcon from "./../images/auth-bell.svg";
+import womanIcon from "./../images/auth-image.png";
+import gearIcon from "./../images/auth-gear.svg";
 
 const NavigationBar = () => {
+  let isAuthenticated = true;
   return (
     <div>
       <Navbar className="navbar" collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img src={logo} alt="logo-white" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,14 +28,45 @@ const NavigationBar = () => {
                 |
               </Nav.Link>
 
+<<<<<<< HEAD
               <Nav>
                 <Nav.Link>
                   <Button> Login </Button>
                 </Nav.Link>
                 <Nav.Link eventKey={2} href="#memes">
                   <Button className="btn-register"> Register </Button>
+=======
+              {isAuthenticated && (
+                <Nav>
+                  <Nav.Link href="#deets">
+                    <Button> Login </Button>
+                  </Nav.Link>
+                  <Nav.Link eventKey={2} href="#memes">
+                    <Button className="btn-register"> Register </Button>
+                  </Nav.Link>
+                </Nav>
+              )}
+
+              {!isAuthenticated && (
+                <Nav.Link href="#deets" className="auth-flex">
+                  <img
+                    className="auth-flex-img-gear"
+                    src={gearIcon}
+                    alt="gear"
+                  />
+                  <img
+                    className="auth-flex-img-bell"
+                    src={bellIcon}
+                    alt="bell"
+                  />
+                  <div className="auth-flex-textArea">
+                    <h5>MarvFash</h5>
+                    <h5>8958u59848838</h5>
+                  </div>
+                  <img src={womanIcon} alt="gear" />
+>>>>>>> 490c4aae89a27fb60b325e55756a78866a7c7b68
                 </Nav.Link>
-              </Nav>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

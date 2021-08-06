@@ -1,0 +1,26 @@
+
+.dropdown, .dropend, .dropstart, .dropup{
+    width: 70vw !important;
+    border: 2px solid black;
+   }
+
+   .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
+       background-color: brown !important;
+       width: 70vw !important;
+   }
+
+   .btn-check:focus+.btn-primary, .btn-primary:focus{
+    background-color: brown !important;
+    width: 70vw !important;
+   }
+   .dropdown-item{
+       width: 70vw !important;
+       height: 5vh;
+      
+   }
+
+   .dropdown-menu.show{
+    border-radius: 20px !important;
+    box-shadow: 5px 0px 13px rgba(0, 0, 0, 0.1);
+   }
+ 
