@@ -28,14 +28,6 @@ const NavigationBar = () => {
                 |
               </Nav.Link>
 
-<<<<<<< HEAD
-              <Nav>
-                <Nav.Link>
-                  <Button> Login </Button>
-                </Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  <Button className="btn-register"> Register </Button>
-=======
               {isAuthenticated && (
                 <Nav>
                   <Nav.Link href="#deets">
@@ -64,7 +56,6 @@ const NavigationBar = () => {
                     <h5>8958u59848838</h5>
                   </div>
                   <img src={womanIcon} alt="gear" />
->>>>>>> 490c4aae89a27fb60b325e55756a78866a7c7b68
                 </Nav.Link>
               )}
             </Nav>
