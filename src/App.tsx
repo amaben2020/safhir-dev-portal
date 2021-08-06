@@ -11,20 +11,7 @@ function App() {
   return (
     <>
       <NavigationBar />
-      <Router>
-        <Switch>
-          <Route exact path="./landing-page" component={LandingPage} />
-          <Route exact path="./login" component={LoginPage} />
-          <Route
-            exact
-            path="./app-registration"
-            component={SoftwareRegistrationPage}
-          />
-        </Switch>
-        {/* <LandingPage /> */}
-        {/* <LoginPage /> */}
-        <SoftwareRegistrationPage />
-      </Router>
+
       <Routes />
     </>
   );

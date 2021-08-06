@@ -33,7 +33,7 @@
 html {
   font-size: 62.5%; //1rem = 10px so 10px/16px = 0.625 => 62.5%
   scroll-behavior: smooth;
- 
+  
 }
 
 body {
@@ -43,6 +43,7 @@ body {
   box-sizing: border-box;
   font-style: normal;
   overflow: hidden;
+ 
 }
 
 ::selection {

@@ -8,6 +8,7 @@ import gearIcon from "./../images/auth-gear.svg";
 
 const NavigationBar = () => {
   let isAuthenticated = true;
+
   return (
     <div>
       <Navbar className="navbar" collapseOnSelect expand="lg">
@@ -30,10 +31,10 @@ const NavigationBar = () => {
 
               {isAuthenticated && (
                 <Nav>
-                  <Nav.Link href="#deets">
+                  <Nav.Link href="/login">
                     <Button> Login </Button>
                   </Nav.Link>
-                  <Nav.Link eventKey={2} href="#memes">
+                  <Nav.Link eventKey={2} href="/register">
                     <Button className="btn-register"> Register </Button>
                   </Nav.Link>
                 </Nav>

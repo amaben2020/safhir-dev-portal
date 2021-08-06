@@ -13,7 +13,7 @@ import { useHistory, useLocation } from "react-router";
 import copy from "./../../images/copy.svg";
 import down from "./../../images/down-arrow.svg";
 import { useState } from "react";
-import { data } from "./data";
+// import { data } from "./data";
 import "./../PendingApproval/pending-approval.scss";
 import "./../../components/Modal/modal.scss";
 

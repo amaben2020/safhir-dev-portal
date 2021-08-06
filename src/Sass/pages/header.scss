@@ -25,6 +25,14 @@
     justify-content: center;
     align-items: center;
     padding: 3rem !important;
+
+    // &-h3{
+    //   @media screen and (max-width: 472px) {
+    //  margin-left: 10vw !important;
+    //     }
+    // }
+     
+   
   }
 
   &-button-area {
@@ -105,8 +113,13 @@
   display: flex;
 
   @media screen and (max-width: 546px) {
-    padding: 3.8rem !important;
+      padding: 3.8rem !important;
   }
+
+  @media screen and (max-width: 541px) {
+    padding: 1rem 5.8rem 5.8rem 11rem  !important;
+    margin: auto;
+}
 
   &-img {
     width: 80%;

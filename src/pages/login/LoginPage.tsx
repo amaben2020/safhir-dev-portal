@@ -70,7 +70,7 @@ const LoginPage = () => {
             <div className="no-account">
               <p>
                 Don’t Have an Account?{" "}
-                <Link to="" className="registration-link">
+                <Link to="/register" className="registration-link">
                   Register
                 </Link>
               </p>

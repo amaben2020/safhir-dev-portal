@@ -4,13 +4,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const LandingPage = React.lazy(() => import("./../components/LandingPage"));
 const ApprovedSoftware = React.lazy(
-  () => import("../Pages/ApprovedSoftware/ApprovedSoftware")
+  () => import("./../pages/ApprovedSoftware/ApprovedSoftware")
 );
-const DevportalHome = React.lazy(() => import("../Pages/DevportalHome"));
+const DevportalHome = React.lazy(() => import("./../pages/DevportalHome"));
 const PendingApproval = React.lazy(
-  () => import("../Pages/PendingApproval/PendingApproval")
+  () => import("./../pages/PendingApproval/PendingApproval")
 );
 const Dashboard = React.lazy(() => import("./../components/Layout/Layout"));
+const Login = React.lazy(() => import("./../pages/login/LoginPage"));
+const Register = React.lazy(
+  () => import("./../pages/softwareRegistration/SoftwareRegistrationPage")
+);
 
 const Routes = () => {
   return (
@@ -25,6 +29,10 @@ const Routes = () => {
         <Route exact path="/">
           <LandingPage />
         </Route>
+
+        <Route exact path="/login" component={Login} />
+
+        <Route exact path="/register" component={Register} />
 
         <Dashboard>
           <Switch>

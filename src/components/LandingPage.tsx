@@ -16,14 +16,14 @@ const LandingPage = () => {
   const handleShow = () => setShow(true);
   const history = useHistory();
 
+  const login = () => {
+    return history.push("/login");
+  };
+
   return (
     <>
       <div className="overflow">
         <>
-          {/* <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
-        </Button> */}
-
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>SAFHIR Developer Portal</Modal.Title>
@@ -166,7 +166,10 @@ const LandingPage = () => {
                   Progamming Interfaces (APIs).{" "}
                 </h3>
                 <div className="landingPage__wrapper-button-area">
-                  <button className="landingPage__wrapper-button-area-1">
+                  <button
+                    className="landingPage__wrapper-button-area-1"
+                    onClick={login}
+                  >
                     {" "}
                     Login
                   </button>

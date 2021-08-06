@@ -4,6 +4,7 @@ import pending from "./../../images/pendin.svg";
 import approved from "./../../images/approved.svg";
 import unapproved from "./../../images/unapproved.svg";
 import { useHistory } from "react-router-dom";
+import { useEffect } from "react";
 
 const Sidebar = () => {
   const url = "/devportal-home";
@@ -12,6 +13,8 @@ const Sidebar = () => {
   const url3 = "/approved-software";
 
   const history = useHistory();
+  const locator = history.location.pathname === "/login";
+  console.log(locator);
 
   const dashboardLink = () => {
     return history.push(url);

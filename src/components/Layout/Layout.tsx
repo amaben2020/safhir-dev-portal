@@ -1,19 +1,22 @@
 import * as React from "react";
 import Sidebar from "../Sidebar/Sidebar";
-import { useLocation } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 import "./layout.scss";
-import DevPortalHome from "./../../Pages/DevportalHome";
-import ApprovedSoftware from "../../Pages/ApprovedSoftware/ApprovedSoftware";
-import PendingApproval from "../../Pages/PendingApproval/PendingApproval";
+import DevPortalHome from "./../../pages/DevportalHome";
+import ApprovedSoftware from "./../../pages/ApprovedSoftware/ApprovedSoftware";
+import PendingApproval from "./../../pages/PendingApproval/PendingApproval";
 
 interface Props {
   children: React.ReactNode;
 }
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
+  const history = useHistory();
+  const locator = history.location.pathname === "/login" || "/";
+  console.log(locator);
   return (
     <>
       <div style={{ display: "flex" }}>
-        <Sidebar />
+        {locator ? null : <Sidebar />}
         <DevPortalHome />
         {props.children}
       </div>
