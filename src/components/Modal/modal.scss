@@ -35,11 +35,15 @@
 
 .agree{
     @extend .button-register;
-  width: auto !important;
+    margin-right: 2vw;
+  width: 20vw !important;
+  font-weight: 400;
+
 }
 .cancel{
     @extend .button-login;
    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+   width: 20vw !important;
   
 }
 
@@ -49,5 +53,7 @@
     bottom: 0;
     background: #fff !important;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
  

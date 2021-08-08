@@ -1,20 +1,34 @@
-import { Col, Row, Dropdown, DropdownButton } from "react-bootstrap";
+import {
+  Col,
+  Row,
+  Dropdown,
+  DropdownButton,
+  Accordion,
+  Table,
+} from "react-bootstrap";
 // import './devportal-home.scss';
 // import Dropdownn from './../components/Dropdown/Dropdown'
 import "./approved-software.scss";
 import { useHistory, useLocation } from "react-router";
 import copy from "./../../images/copy.svg";
 import down from "./../../images/down-arrow.svg";
+import Dropdownn from "../../components/Dropdown/Dropdown";
+import CollapsibleTable from "../../components/collapsibleTable.js/CollapsibleTable";
 
 const ApprovedSoftware = () => {
   const history = useHistory();
   const route = useLocation();
   return (
-    <div className="home ">
+    <div className="home overflow2">
       {route.pathname === "/approved-software" && (
         <Row>
-          <Col lg={12} sm={12} xs={12} className="wrapper overflow">
+          <Col lg={12} sm={12} xs={12} className="wrapper">
             {/* <Dropdownn/> */}
+
+            <div className="smally" style={{ marginTop: "5rem" }}>
+              <Dropdownn />
+            </div>
+
             <div className="home ">
               <h2 className="home-h2"> New/Unapproved Software</h2>
               <button className="home-btn"> Create New Application </button>
@@ -29,6 +43,8 @@ const ApprovedSoftware = () => {
               for you automatically.{" "}
             </h3>
 
+            {/* <CollapsibleTable /> */}
+
             <Dropdown>
               <Dropdown.Toggle variant="success">
                 <div className="approved-dropdown">
@@ -36,8 +52,8 @@ const ApprovedSoftware = () => {
                     {" "}
                     New Application 1.0{" "}
                   </h2>{" "}
-                  <h2 className="approved-dropdown-h2"> V2</h2>{" "}
-                  <h2 className="approved-dropdown-h2">
+                  <h2 className="approved-dropdown-h3"> V2</h2>{" "}
+                  <h2 className="approved-dropdown-h3">
                     {" "}
                     6a3007c3-63a3-4777-a03b-4c599a367d57
                   </h2>{" "}
@@ -53,6 +69,9 @@ const ApprovedSoftware = () => {
                       alt="down"
                     />
                   </div>
+                  <button className="view-igs-btn smally">
+                    View Implementation Guides
+                  </button>
                 </div>
               </Dropdown.Toggle>
 
@@ -100,8 +119,8 @@ const ApprovedSoftware = () => {
                     {" "}
                     New Application 1.0{" "}
                   </h2>{" "}
-                  <h2 className="approved-dropdown-h2"> V2</h2>{" "}
-                  <h2 className="approved-dropdown-h2">
+                  <h2 className="approved-dropdown-h3"> V2</h2>{" "}
+                  <h2 className="approved-dropdown-h3">
                     {" "}
                     6a3007c3-63a3-4777-a03b-4c599a367d57
                   </h2>{" "}
@@ -117,6 +136,9 @@ const ApprovedSoftware = () => {
                       alt="down"
                     />
                   </div>
+                  <button className="view-igs-btn smally">
+                    View Implementation Guides
+                  </button>
                 </div>
               </Dropdown.Toggle>
 
@@ -164,8 +186,8 @@ const ApprovedSoftware = () => {
                     {" "}
                     New Application 1.0{" "}
                   </h2>{" "}
-                  <h2 className="approved-dropdown-h2"> V2</h2>{" "}
-                  <h2 className="approved-dropdown-h2">
+                  <h2 className="approved-dropdown-h3"> V2</h2>{" "}
+                  <h2 className="approved-dropdown-h3">
                     {" "}
                     6a3007c3-63a3-4777-a03b-4c599a367d57
                   </h2>{" "}
@@ -180,6 +202,10 @@ const ApprovedSoftware = () => {
                       src={down}
                       alt="down"
                     />
+
+                    <button className="view-igs-btn smally">
+                      View Implementation Guides
+                    </button>
                   </div>
                 </div>
               </Dropdown.Toggle>

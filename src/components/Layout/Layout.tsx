@@ -11,12 +11,13 @@ interface Props {
 }
 const Layout: React.FunctionComponent<Props> = (props: Props) => {
   const history = useHistory();
-  const locator = history.location.pathname === "/login" || "/";
+  const locator = history.location.pathname === "/login";
   console.log(locator);
   return (
     <>
       <div style={{ display: "flex" }}>
         {locator ? null : <Sidebar />}
+        {/* <Sidebar /> */}
         <DevPortalHome />
         {props.children}
       </div>

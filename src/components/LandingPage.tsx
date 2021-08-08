@@ -146,7 +146,7 @@ const LandingPage = () => {
 
         <div className="landingPage__wrapper">
           <Row>
-            <Col lg={6} md={6}>
+            <Col lg={6} md={6} sm={12}>
               <header className="landingPage__wrapper-header">
                 <img
                   className="landingPage__wrapper-img"

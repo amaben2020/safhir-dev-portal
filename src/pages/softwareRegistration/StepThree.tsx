@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-
+import "../softwareRegistration/SoftwareRegistrationPage.scss";
 const StepThree = () => {
   const implementationGuidePayerData = [
     { payer: "Select Payer" },
@@ -26,10 +26,10 @@ const StepThree = () => {
     <Form>
       <Form.Group className="mb-5">
         <Form.Label className="label">Implementation Guides *</Form.Label>
-        <p>
+        <h5 className="carin-txt">
           CARIN Blue Button and US Core are selected by default, allowing access
           to the full range of data from the API.
-        </p>
+        </h5>
 
         <Form.Select
           onChange={implementationGuidesPayerChangeHandler}

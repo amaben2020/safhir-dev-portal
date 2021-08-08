@@ -50,7 +50,12 @@ const LoginPage = () => {
                 required
               />
             </Form.Group>
-            <div className="forgot-password mb-3">
+
+            <div className="login-btn">
+              <Button type="submit" title="Login" />
+            </div>
+
+            <div className="forgot-password m-4">
               <span>
                 Forgot Password?{" "}
                 <Link to="" className="recover-link">
@@ -61,23 +66,22 @@ const LoginPage = () => {
             <div className="recover">
               <p>
                 {" "}
-                <span>Recover with Email</span> or <span>Recovery Phrase</span>
+                <span>Recover with Email</span>{" "}
+                <span className="no-acct"> or</span>{" "}
+                <span>Recovery Phrase</span>
               </p>
             </div>
             <div className="divider">
               <hr />
             </div>
+
             <div className="no-account">
-              <p>
+              <p className="no-acct">
                 Don’t Have an Account?{" "}
                 <Link to="/register" className="registration-link">
                   Register
                 </Link>
               </p>
-            </div>
-
-            <div className="login-btn">
-              <Button type="submit" title="Login" />
             </div>
           </Form>
         </Card>

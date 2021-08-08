@@ -1,26 +1,54 @@
 
-.dropdown, .dropend, .dropstart, .dropup{
-    width: 70vw !important;
-    border: 2px solid black;
-   }
 
-   .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
-       background-color: brown !important;
-       width: 70vw !important;
-   }
+.accordion-item:last-of-type{
+border-radius: 10px;
+padding: 0px, 16px, 0px, 16px;
+border: none !important;
+}
 
-   .btn-check:focus+.btn-primary, .btn-primary:focus{
-    background-color: brown !important;
-    width: 70vw !important;
-   }
-   .dropdown-item{
-       width: 70vw !important;
-       height: 5vh;
-      
-   }
-
-   .dropdown-menu.show{
-    border-radius: 20px !important;
+.accordion-item:first-of-type{
+    border-radius: 10px;
+    padding: 0px, 16px, 0px, 16px;
+    border: none !important;
+    }
+    .accordion-item:first-of-type .accordion-button{
+        border-radius: 10px;
+        padding: 0px, 16px, 0px, 16px;
+        border: none !important;
+        
+    }
+.accordion-button{
+    border-radius: 20px;
+    padding: 1rem;
     box-shadow: 5px 0px 13px rgba(0, 0, 0, 0.1);
-   }
+    width: 90%;
+    margin-left: 5vw;
+}
+
+.accordion{
+    border-radius: 20px;
+}
+
+.accordion-header{
+     
+}
+
+.to-left{
+    margin-left: 5vw;
+    border-bottom: none;
+    
+}
+.accordion-body{
+ margin-top: -3rem;
+}
+
+.img-width{
+    width: 2rem;
+    margin-left: 2rem;
+}
+
+.dropDiv{
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
  

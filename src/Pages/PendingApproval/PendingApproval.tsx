@@ -16,6 +16,7 @@ import { useState } from "react";
 // import { data } from "./data";
 import "./../PendingApproval/pending-approval.scss";
 import "./../../components/Modal/modal.scss";
+import Dropdownn from "../../components/Dropdown/Dropdown";
 
 const PendingApproval = () => {
   const history = useHistory();
@@ -41,8 +42,10 @@ const PendingApproval = () => {
       {route.pathname === "/pending-approval" && (
         <Row>
           <Col lg={12} sm={12} xs={12} className="wrapper overflow">
-            {/* <Dropdownn/> */}
             <div className="home ">
+              <div className="smally" style={{ marginTop: "5rem" }}>
+                <Dropdownn />
+              </div>
               <h2 className="home-h2"> Software Pending Approval</h2>
               <button className="home-btn"> Create New Application </button>
             </div>
