@@ -15,6 +15,9 @@ const Login = React.lazy(() => import("./../pages/login/LoginPage"));
 const Register = React.lazy(
   () => import("./../pages/softwareRegistration/SoftwareRegistrationPage")
 );
+const CreateAccount = React.lazy(
+  () => import("./../pages/createAccount/createAccount")
+);
 
 const Routes = () => {
   return (
@@ -29,9 +32,8 @@ const Routes = () => {
         <Route exact path="/">
           <LandingPage />
         </Route>
-
         <Route exact path="/login" component={Login} />
-
+        <Route exact path="/create-account" component={CreateAccount} />
         <Route exact path="/register" component={Register} />
 
         <Dashboard>

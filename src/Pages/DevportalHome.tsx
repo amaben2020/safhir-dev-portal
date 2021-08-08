@@ -2,6 +2,7 @@ import { Col, Row, Dropdown, DropdownButton } from "react-bootstrap";
 import "./devportal-home.scss";
 import Dropdownn from "./../components/Dropdown/Dropdown";
 import { useHistory, useLocation } from "react-router";
+import Footer from "../components/Footer";
 const DevportalHome = () => {
   const history = useHistory();
   const route = useLocation();

@@ -84,6 +84,12 @@ a.nav-link {
   font-weight: 500;
   width: 135px;
   padding: 8px, 32px, 8px, 32px;
+  
+  &:hover{
+    font-size: 15px;
+     
+  }
+
  
 }
 
@@ -99,9 +105,11 @@ a.nav-link {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: center;
-
-  
+  text-align: center; 
+  &:hover{
+    font-size: 15px;
+     
+  } 
 }
 
 .navbar-toggler-icon {

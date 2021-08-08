@@ -13,7 +13,6 @@ import { useHistory, useLocation } from "react-router";
 import copy from "./../../images/copy.svg";
 import down from "./../../images/down-arrow.svg";
 import Dropdownn from "../../components/Dropdown/Dropdown";
-import CollapsibleTable from "../../components/collapsibleTable.js/CollapsibleTable";
 
 const ApprovedSoftware = () => {
   const history = useHistory();

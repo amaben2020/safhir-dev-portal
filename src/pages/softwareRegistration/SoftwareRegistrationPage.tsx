@@ -119,7 +119,7 @@ const SoftwareRegistrationPage = () => {
                 <BareButton title="Back" onClick={previousStep} />
               )}
             </div>
-            <div className=" mt-5 cancel-apllication">
+            <div className=" mt-2 cancel-apllication">
               {step === 1 && (
                 <BareButton title="Cancel" onClick={cancelApplication} />
               )}

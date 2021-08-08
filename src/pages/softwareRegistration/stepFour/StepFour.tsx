@@ -2,9 +2,11 @@ import React from "react";
 import "./StepFour.scss";
 import Success from "../../../images/registration-success-icon.svg";
 import Button from "../../../components/button/Button";
+import { useHistory } from "react-router";
 const StepFour = () => {
+  const history = useHistory();
   const goToApplication = () => {
-    console.log("Done");
+    history.push("/devportal-home");
   };
   return (
     <div className="success-container">

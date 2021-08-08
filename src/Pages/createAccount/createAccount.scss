@@ -1,0 +1,43 @@
+@use  './../../Sass/base/typography.scss';
+
+
+.createAccount {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin: 2rem;
+
+   &__text{
+       display: flex;
+       justify-content: center;
+   }
+}
+
+.form-wrapper{
+    padding: 32px 48px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.form-control{
+    background: #F2F5FE;
+    border-radius: 10px;
+    padding: 1rem;
+
+}
+
+.person {
+    display: block;
+    text-indent: -9999px;
+    width: 100px;
+    height: 82px;
+    background: url('./../../images/person.svg');
+    background-size: 100px 82px;
+    border: none !important;
+  }
+
+  .header-main{
+      @extend .h1;
+      font-size: 32px;
+      font-weight: 600;
+  }
