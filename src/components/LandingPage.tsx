@@ -33,7 +33,7 @@ const LandingPage = () => {
             <Modal.Footer>
               <Button
                 className="agree"
-                onClick={() => history.push("/devportal-home")}
+                onClick={() => history.push("/create-account")}
               >
                 I AGREE TO THESE TERMS
               </Button>

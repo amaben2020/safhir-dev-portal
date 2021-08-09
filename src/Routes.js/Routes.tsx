@@ -19,6 +19,10 @@ const CreateAccount = React.lazy(
   () => import("./../pages/createAccount/createAccount")
 );
 
+const DevportalVerification = React.lazy(
+  () => import("./../pages/devPortalVerification/DevportalVerification")
+);
+
 const Routes = () => {
   return (
     <React.Suspense
@@ -35,6 +39,11 @@ const Routes = () => {
         <Route exact path="/login" component={Login} />
         <Route exact path="/create-account" component={CreateAccount} />
         <Route exact path="/register" component={Register} />
+        <Route
+          exact
+          path="/complete-verification"
+          component={DevportalVerification}
+        />
 
         <Dashboard>
           <Switch>
