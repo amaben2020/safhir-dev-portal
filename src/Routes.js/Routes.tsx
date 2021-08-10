@@ -1,26 +1,30 @@
-import React from "react";
-import { Spinner } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import { Spinner } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const LandingPage = React.lazy(() => import("./../components/LandingPage"));
+const LandingPage = React.lazy(() => import('./../components/LandingPage'));
 const ApprovedSoftware = React.lazy(
-  () => import("./../pages/ApprovedSoftware/ApprovedSoftware")
+  () => import('./../pages/ApprovedSoftware/ApprovedSoftware')
 );
-const DevportalHome = React.lazy(() => import("./../pages/DevportalHome"));
+const DevportalHome = React.lazy(() => import('./../pages/DevportalHome'));
 const PendingApproval = React.lazy(
-  () => import("./../pages/PendingApproval/PendingApproval")
+  () => import('./../pages/PendingApproval/PendingApproval')
 );
-const Dashboard = React.lazy(() => import("./../components/Layout/Layout"));
-const Login = React.lazy(() => import("./../pages/login/LoginPage"));
+const Dashboard = React.lazy(() => import('./../components/Layout/Layout'));
+const Login = React.lazy(() => import('./../pages/login/LoginPage'));
 const Register = React.lazy(
-  () => import("./../pages/softwareRegistration/SoftwareRegistrationPage")
+  () => import('./../pages/softwareRegistration/SoftwareRegistrationPage')
 );
 const CreateAccount = React.lazy(
-  () => import("./../pages/createAccount/createAccount")
+  () => import('./../pages/createAccount/createAccount')
 );
 
 const DevportalVerification = React.lazy(
-  () => import("./../pages/devPortalVerification/DevportalVerification")
+  () => import('./../pages/devPortalVerification/DevportalVerification')
+);
+
+const CreateDevPortal = React.lazy(
+  () => import('./../pages/createDevPortal/CreateDevPortal')
 );
 
 const Routes = () => {
@@ -44,6 +48,7 @@ const Routes = () => {
           path="/complete-verification"
           component={DevportalVerification}
         />
+        <Route exact path="/create-dev-account" component={CreateDevPortal} />
 
         <Dashboard>
           <Switch>
