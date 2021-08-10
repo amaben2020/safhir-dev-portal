@@ -1,0 +1,16 @@
+footer {
+  min-width: 100vw;
+  background: black;
+  height: 5rem;
+  padding: 4rem !important;
+  // display: flex;
+  
+
+  
+    @media screen and (max-width:895px ) {
+      // flex-direction: column;
+      display: none;
+    }
+  
+  
+}

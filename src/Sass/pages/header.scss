@@ -1,0 +1,171 @@
+@use './../base/typography.scss';
+@use  './../base/button.scss';
+
+
+
+.overflow {
+  overflow-y: scroll !important;
+  height: 93vh;
+  
+
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important; 
+  }
+}
+
+
+.landingPage__wrapper {
+  padding: 10rem;
+  display: flex;
+  transition: all 0.2s ease-in;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem !important;
+
+    // &-h3{
+    //   @media screen and (max-width: 472px) {
+    //  margin-left: 10vw !important;
+    //     }
+    // }
+     
+   
+  }
+
+  &-button-area {
+    margin-top: 2rem;
+
+    &-1 {
+     @extend .button-login;
+    }
+
+    &-2 {
+     @extend .button-register;
+    }
+  }
+
+  &-img {
+    width: 20%;
+    display: block;
+
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+  }
+
+  &-h1 {
+       @extend .h1
+     }
+
+  &-h2 {
+   @extend .h2;
+    &-span {
+      color: #4a46ef;
+      font-weight: 600;
+    }
+
+    &-h3 {
+  @extend .h3;
+    }
+  }
+
+  &-header {
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &-hero {
+    display: flex !important;
+    text-align: center;
+    justify-content: center;
+
+    &-img {
+      width: 85%;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &-section2-textArea {
+    @media screen and (max-width: 768px) {
+    }
+    &-h1 {
+      @extend .h1-secondary;
+    }
+    &-h2 {
+       @extend .h2-secondary;
+    }
+
+    &-h3 {
+     @extend .h3-secondary;
+    }
+  }
+}
+
+.landingPage__section2 {
+  padding: 10rem;
+  display: flex;
+
+  @media screen and (max-width: 546px) {
+      padding: 3.8rem !important;
+  }
+
+  @media screen and (max-width: 541px) {
+    padding: 1rem 5.8rem 5.8rem 11rem  !important;
+    margin: auto;
+}
+
+  &-img {
+    width: 80%;
+  }
+
+  &-textArea {
+    padding: 2rem;
+
+    &-h1 {
+      @extend .h1-small;
+    }
+  }
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+
+  &-logo {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  &-text {
+    color: var( --color-primary-white);
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+
+  &-1 {
+   @extend .footer-font;
+  }
+  &-2 {
+      @extend .footer-font;
+  }
+}
+
+.space {
+  margin-right: 5rem;
+}
+
+.landingPage__wrapper-section2-img {
+  @media screen and (max-width: 540px) {
+    width: 20%;
+    margin-bottom: 1rem;
+  }
+}

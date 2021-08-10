@@ -1,13 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import NavigationBar from "./components/NavigatorBar";
+
+import Routes from "./Routes.js/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Safhire Repo Created</h1>
-      <p>For saphir project</p>
-    </div>
+    <>
+      <NavigationBar />
+
+      <Routes />
+    </>
   );
 }
 

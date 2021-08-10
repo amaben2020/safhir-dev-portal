@@ -1,0 +1,88 @@
+@use  './../../Sass/base/button.scss';
+
+.verification{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 32px 48px;
+}
+
+.wrappin-container{
+    height: 100vh;
+}
+
+.heading-main{
+    text-align: center !important;
+    color: #111111;
+    font-weight: 600;
+    font-family: Montserrat;
+    margin: 3vh;
+    @media screen and (max-width: 768px) {
+        font-size: 26px;
+    }
+}
+
+label{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #111111;
+    padding-left: 1vw;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+    }
+    .text-muted{
+        padding-left: 3vw; 
+        font-family: Questrial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;  
+        color: #484BEB !important;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+
+    .form-check-input[type=checkbox]{
+        // background: #484BEB;
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+    .grey-color{
+        color: #C7C7CC !important;
+        // background: #C7C7CC;
+    }
+
+.btn-area{
+    display: flex;
+    justify-content: center;
+}
+
+.dev-btn{
+    @extend .button-register;
+    width: 50vw;
+    margin: 3rem;
+    padding: 1.6rem;
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+    @media screen and (max-width: 529px ) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 428px ) {
+       width: 80vw;
+    }
+}
+
+// .verification-wrapper{
+//     margin: auto;
+// }

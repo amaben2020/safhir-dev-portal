@@ -1,0 +1,32 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .success-message {
+        :nth-child(1) {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            font-weight: bold;
+
+            color: #111111;
+        }
+        :nth-child(2) {
+            font-family: Questrial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: #616576;
+        }
+    }
+    .submit-data button {
+        width: 100% !important;
+        border: none;
+    }
+}

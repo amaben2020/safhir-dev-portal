@@ -1,0 +1,144 @@
+@use  './../../Sass/base/typography.scss';
+
+
+.createAccount {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+    font-family: Montserrat;
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin: 1vh;
+
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+   &__text{
+       display: flex;
+       justify-content: space-around;
+       &-1{
+        color: #484BEB;
+        cursor: pointer;
+        justify-self: flex-start;
+        text-align: left;
+       }
+       &-2{
+            text-align: center;
+       }
+       &-3{
+           text-align: right;
+       }
+   }
+}
+
+.form-wrapper{
+    padding: 32px 48px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.form-control{
+    background: #F2F5FE;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text-muted{
+    font-family: Questrial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.marLeft{
+    padding-left: 1vw;
+}
+
+.base-text{
+    margin: 2rem;
+}
+
+.person {
+    display: block;
+    text-indent: -9999px;
+    width: 140px;
+    height: 100px;
+    background: url('./../../images/person.svg');
+    background-size: 140px 100px;
+    border: none !important;
+  }
+
+  .header-main{
+      @extend .h1;
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center !important;
+
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+    }
+  }
+
+  .form-label{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #111111;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+  }
+
+  .overflow3 {
+    overflow-y: scroll !important;
+    height: 93vh;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      background: transparent !important; 
+    }
+  }
+.flex-cont{
+    justify-content: center;
+    display: flex;
+}
+.createAcct-btn{
+background: linear-gradient(90deg, #4A46EF 0%, #387FC1 48.96%, #36BCCC 100%);
+text-align: center;
+width: 35vw;
+justify-self: center;
+padding: 1rem;
+}
+.img-content{
+    display: flex;
+     
+    &__text{
+        align-self: center;
+       justify-self: center;
+       margin-left: 0.5vw;
+       color: #484BEB;
+       font-family: Montserrat;
+       font-size: 14px;
+       font-style: normal;
+       font-weight: 600;
+       line-height: 24px;
+       letter-spacing: 0em;
+       text-align: center;
+       
+    }
+}

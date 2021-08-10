@@ -1,0 +1,118 @@
+@use  './../base/button.scss';
+
+
+.navbar,
+.navbar-default {
+  background-image: var( --color-primary-nav) !important;
+  padding: 2vh;
+  align-items: center;
+  box-shadow: 5px 0px 13px rgba(61, 61, 61, 0.418);
+ 
+    //  @media screen and (max-width:895px ) {
+    //   width: 110vw;
+    //  }
+  
+ 
+
+  // &:hover {
+  //   background-image: var(--color-primary-nav-inverted) !important;
+  // }
+}
+
+.navbar-brand {
+  @media screen and (min-width: 1302px) {
+    margin-right: 20vw;
+  }
+}
+
+.items {
+  justify-self: flex-end;
+  margin-left: auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var( --color-primary-white) !important;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media screen and (min-width: 1002px) {
+    align-items: center;
+    font-size: 16px;
+  }
+}
+
+.nav-link {
+  color: var( --color-primary-white) !important;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+a.nav-link {
+  justify-self: space-around !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin-left: 2.5rem !important;
+}
+
+.auth-flex{
+  display: flex;
+  &-img-gear{
+  margin-right: 1rem;
+  }
+  &-img-bell{
+    margin: 1rem;
+    }
+
+  &-textArea{
+    padding: 0.5rem ;
+  }
+}
+
+.btn-primary {
+  background: transparent;
+  color: var( --color-primary-white) !important;
+  border: 1px solid var( --color-primary-white);
+  border-radius: 10000px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 135px;
+  padding: 8px, 32px, 8px, 32px;
+  
+  &:hover{
+    font-size: 15px;
+     
+  }
+
+ 
+}
+
+.btn-register {
+  width: 135px;
+  border-radius: 10000px;
+  padding: 8px, 32px, 8px, 32px;
+  background:var( --color-primary-white) !important;
+  color: #000 !important;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center; 
+  &:hover{
+    font-size: 15px;
+     
+  } 
+}
+
+.navbar-toggler-icon {
+  width: 2.5em;
+  height: 2.5em;
+}

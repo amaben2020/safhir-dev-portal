@@ -1,0 +1,110 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .login-header {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 3rem 0;
+        color: #111111;
+        font-weight: 600;
+    }
+    .login-form-container {
+        width: 40vw;
+        form {
+            padding: 4rem;
+            label {
+                font-family: Questrial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 27px;
+
+                color: #111111;
+            }
+            input {
+                border: none;
+                font-family: Questrial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 27px;
+                background-color: #f2f5fe;
+                color: #797c8c;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            .forgot-password {
+                display: grid;
+                place-content: center;
+
+                span {
+                    text-align: center;
+                    font-family: Questrial;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    color: #4c5065;
+
+                    .recover-link {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .recover {
+                display: grid;
+                place-content: center;
+
+                span {
+                    margin-top: 2rem;
+                    font-family: Questrial;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 27px;
+                    color: #484beb;
+                }
+            }
+            .divider {
+                hr {
+                    color: #8b8b8b;
+
+                }
+            }
+            .no-account {
+                display: grid;
+                place-content: center;
+                .registration-link {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+/* Smartphones (portrait and landscape) --- */
+@media screen and (max-width: 480px) {
+    .login-form-container {
+        width: 80vw !important;
+    }
+}
+
+.no-acct{
+    font-family: Questrial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4C5065 !important; 
+    margin: 0 1rem;
+}
+
+ 

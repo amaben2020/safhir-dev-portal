@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary-nav: linear-gradient(
+    90deg,
+    #4a46ef 0%,
+    #387fc1 48.96%,
+    #36bccc 100%
+  );
+  --color-primary-nav-inverted: linear-gradient(
+    90deg,
+    #36bccc 100%,
+    #387fc1 48.96%,
+    #4a46ef 50%
+  );
+  --color-navigation: linear-gradient(90.26deg, #9cbf2b 0.22%, #36adbb 50.22%);
+  --color-primary-dark-a: #111111;
+  --light-grey: #e3e3ec;
+  --color-primary-green: #36adbb;
+  --color-primary-white: #ffffff;
+  --color-primary-black: #111111;
+  --shadow-light: 0 2.4rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-dark: 0 2.6rem 5.5rem rgba(0, 0, 0, 0.06);
+ 
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px so 10px/16px = 0.625 => 62.5%
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: "Questrial", "sans-serif", "Montserrat";
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+  font-style: normal;
+  overflow: hidden;
+ 
+}
+
+::selection {
+  background-color: #4a46ef;
+  color: #fff;
+}
