@@ -1,28 +1,28 @@
-import React, { useState } from "react";
-import Card from "../../components/bareCard/Card";
-import "./SoftwareRegistrationPage.scss";
-import Button from "../../components/button/Button";
-import BareButton from "../../components/button/bareButton/BareButton";
-import StepOne from "./StepOne";
-import StepTwo from "./StepTwo";
-import StepThree from "./StepThree";
-import StepFour from "./stepFour/StepFour";
+import React, { useState } from 'react';
+import Card from '../../components/bareCard/Card';
+import './SoftwareRegistrationPage.scss';
+import Button from '../../components/button/Button';
+import BareButton from '../../components/button/bareButton/BareButton';
+import StepOne from './../softwareRegistration/StepOne';
+import StepTwo from '../softwareRegistration/StepTwo';
+import StepThree from './../softwareRegistration/StepThree';
+import StepFour from '../softwareRegistration/stepFour/StepFour';
 
 const SoftwareRegistrationPage = () => {
   const defaultData = {
-    applicationName: "",
-    clientId: "",
-    clientVersion: "",
-    applicationType: "",
+    applicationName: '',
+    clientId: '',
+    clientVersion: '',
+    applicationType: '',
     redirectUris: [],
-    logoUri: "",
-    applicationDescription: "",
-    clientUri: "",
-    clientTermsOfServiceUri: "",
-    securityAttestationUri: "",
+    logoUri: '',
+    applicationDescription: '',
+    clientUri: '',
+    clientTermsOfServiceUri: '',
+    securityAttestationUri: '',
     clientContacts: [],
-    supportEmail: "",
-    supportPhoneNumber: "",
+    supportEmail: '',
+    supportPhoneNumber: '',
     implementationGuides: [],
   };
   const [step, setStep] = useState(1);
@@ -44,7 +44,7 @@ const SoftwareRegistrationPage = () => {
   };
 
   const cancelApplication = () => {
-    console.log("Application Canceled");
+    console.log('Application Canceled');
   };
 
   return (
@@ -55,23 +55,23 @@ const SoftwareRegistrationPage = () => {
           <div className="progress-steps-container">
             <div className="steps">
               <div
-                className={step === 1 ? "step-in-progress" : "step-completed"}
+                className={step === 1 ? 'step-in-progress' : 'step-completed'}
               >
                 <div>
                   <p className="step-number">1</p>
                 </div>
                 <div>
                   <h1 className="title">Implementation Guides</h1>
-                  <p className="status">{step !== 1 ? "Done" : "Pending"}</p>
+                  <p className="status">{step !== 1 ? 'Done' : 'Pending'}</p>
                 </div>
               </div>
               <div
                 className={
                   step === 1
-                    ? "next-step"
+                    ? 'next-step'
                     : step === 2
-                    ? "step-in-progress"
-                    : "step-completed"
+                    ? 'step-in-progress'
+                    : 'step-completed'
                 }
               >
                 <div>
@@ -80,17 +80,17 @@ const SoftwareRegistrationPage = () => {
                 <div>
                   <h1 className="title">Client Details</h1>
                   <p className="status">
-                    {step === 3 || step === 4 ? "Done" : "Pending "}
+                    {step === 3 || step === 4 ? 'Done' : 'Pending '}
                   </p>
                 </div>
               </div>
               <div
                 className={
                   step === 1 || step === 2
-                    ? "next-step"
+                    ? 'next-step'
                     : step === 3
-                    ? "step-in-progress"
-                    : "step-completed"
+                    ? 'step-in-progress'
+                    : 'step-completed'
                 }
               >
                 <div>
@@ -98,7 +98,7 @@ const SoftwareRegistrationPage = () => {
                 </div>
                 <div>
                   <h1 className="title">Software Application Details</h1>
-                  <p className="status">{step !== 4 ? "Pending" : "Done"}</p>
+                  <p className="status">{step !== 4 ? 'Pending' : 'Done'}</p>
                 </div>
               </div>
             </div>

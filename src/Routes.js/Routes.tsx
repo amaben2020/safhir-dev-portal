@@ -4,27 +4,27 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const LandingPage = React.lazy(() => import('./../components/LandingPage'));
 const ApprovedSoftware = React.lazy(
-  () => import('./../pages/ApprovedSoftware/ApprovedSoftware')
+  () => import('./../Pages/ApprovedSoftware/ApprovedSoftware')
 );
-const DevportalHome = React.lazy(() => import('./../pages/DevportalHome'));
+const DevportalHome = React.lazy(() => import('./../Pages/DevportalHome'));
 const PendingApproval = React.lazy(
-  () => import('./../pages/PendingApproval/PendingApproval')
+  () => import('./../Pages/PendingApproval/PendingApproval')
 );
 const Dashboard = React.lazy(() => import('./../components/Layout/Layout'));
-const Login = React.lazy(() => import('./../pages/login/LoginPage'));
+const Login = React.lazy(() => import('./../Pages/login/LoginPage'));
 const Register = React.lazy(
-  () => import('./../pages/softwareRegistration/SoftwareRegistrationPage')
+  () => import('./../Pages/softwareRegistration/SoftwareRegistrationPage')
 );
 const CreateAccount = React.lazy(
-  () => import('./../pages/createAccount/createAccount')
+  () => import('./../Pages/createAccount/createAccount')
 );
 
 const DevportalVerification = React.lazy(
-  () => import('./../pages/devPortalVerification/DevportalVerification')
+  () => import('./../Pages/devPortalVerification/DevportalVerification')
 );
 
 const CreateDevPortal = React.lazy(
-  () => import('./../pages/createDevPortal/CreateDevPortal')
+  () => import('./../Pages/createDevPortal/CreateDevPortal')
 );
 
 const Routes = () => {
