@@ -27,23 +27,20 @@
   --color-primary-black: #111111;
   --shadow-light: 0 2.4rem 5rem rgba(0, 0, 0, 0.06);
   --shadow-dark: 0 2.6rem 5.5rem rgba(0, 0, 0, 0.06);
- 
 }
 
 html {
   font-size: 62.5%; //1rem = 10px so 10px/16px = 0.625 => 62.5%
   scroll-behavior: smooth;
-  
 }
 
 body {
-  font-family: "Questrial", "sans-serif", "Montserrat";
+  font-family: 'Questrial', 'sans-serif', 'Montserrat';
   line-height: 1.7;
   color: #777;
   box-sizing: border-box;
   font-style: normal;
   overflow: hidden;
- 
 }
 
 ::selection {
